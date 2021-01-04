@@ -19,23 +19,23 @@ describe('iSpy', () => {
 
     it('should have call count', () => {
       const spy = spyOn(dummyFun);
-      spy(2,2)
+      spy(2, 2);
 
       expect(spy.callCount()).toEqual(1);
     });
 
     it('wasCalledWith', () => {
       const spy = spyOn(dummyFun);
-      spy(2,2); 
+      spy(2, 2);
 
-      expect(spy.wasCalledWith(2)).toEqual(true); 
-      expect(spy.wasCalledWith(3)).toEqual(false); 
+      expect(spy.wasCalledWith(2)).toEqual(true);
+      expect(spy.wasCalledWith(3)).toEqual(false);
     });
 
     it('returns', () => {
       const spy = spyOn(dummyFun);
-      spy(2,2);
-      
+      spy(2, 2);
+
       expect(spy.returned(4)).toEqual(true);
       expect(spy.returned(5)).toEqual(false);
     });

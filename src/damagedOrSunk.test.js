@@ -1,5 +1,5 @@
 const damagedOrSunk = require('./damagedOrSunk');
-describe.only('damagedOrSunk', () => {
+describe('damagedOrSunk', () => {
   it('should work for test case 1', () => {
     var board = [
       [0, 0, 1, 0],

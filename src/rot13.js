@@ -4,7 +4,6 @@ function rot13(message) {
     .split('')
     .map((letter) => {
       if (/[a-zA-Z]/.test(letter)) {
-        
         if (letter === letter.toUpperCase()) {
           return encryptedDictionary[letter.toLowerCase()].toUpperCase();
         }
@@ -64,16 +63,11 @@ function checkUpperCase(letter) {
   return letter === letter.toUpperCase();
 }
 
-function isCharNotLetter(char) {
-  return !/[a-zA-Z]/.test(char);
-}
-
-module.exports = { rot13, createEncryptedDictionary, checkUpperCase };
+module.exports = {rot13, createEncryptedDictionary, checkUpperCase};
 
 // Todo
 // handle uppercase
 // handle special character, just return character as is
-
 
 // solution
 // function rot13(message) {

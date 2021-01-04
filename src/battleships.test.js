@@ -22,12 +22,7 @@
 // out: [[x, y], [x, y], [x,y ]]
 // check boats for attacks
 // calcuate totalScore
-const {
-  checkCoordinateMatch,
-  checkForAttack,
-  damagedOrSunk,
-  findBoats,
-} = require('./battleships');
+const {checkForAttack, damagedOrSunk, findBoats} = require('./battleships');
 
 describe('battleships', () => {
   describe('findBoats', () => {

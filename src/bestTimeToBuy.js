@@ -77,4 +77,4 @@ const simpleOnePass = (prices) =>
     return acc;
   }, 0);
 
-module.exports = { bruteForce, peakValley, simpleOnePass };
+module.exports = {bruteForce, peakValley, simpleOnePass};

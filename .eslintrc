@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["eslint:recommended", "eslint-config-prettier", "plugin:jest/recommended"],
+  "plugins": ["jest"],
+  "rules": {
+    "strict": ["error", "never"],
+    "no-console": "error",
+    "no-multiple-empty-lines": "error"
+
+  },
+  "env": {
+    "node": true,
+    "jest/globals": true
+  }
+}

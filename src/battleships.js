@@ -15,9 +15,8 @@ function findBoats(board) {
       }
     }
   }
-  
-  return boats;
 
+  return boats;
 }
 
 function checkForHit(boat, attacks) {
@@ -43,10 +42,9 @@ function checkForHit(boat, attacks) {
   }
 }
 
-
 function damagedOrSunk(board, attacks) {
   const boats = findBoats(board);
-  let hits = []
+  let hits = [];
 
   for (let boat of Object.values(boats)) {
     hits.push(checkForHit(boat, attacks));

@@ -1,4 +1,8 @@
-const { rot13, createEncryptedDictionary, checkUpperCase } = require('./rot13.js');
+const {
+  rot13,
+  createEncryptedDictionary,
+  checkUpperCase,
+} = require('./rot13.js');
 
 describe('rot13.js', () => {
   describe('createEncryptedDictionary', () => {
@@ -55,7 +59,7 @@ describe('rot13.js', () => {
       const result = rot13('Te$t');
 
       expect(result).toEqual('Gr$g');
-    })
+    });
   });
 
   describe('checkUpperCase', () => {
@@ -66,5 +70,5 @@ describe('rot13.js', () => {
     it('returns false if letter lowercase', () => {
       expect(checkUpperCase('t')).toEqual(false);
     });
-  })
+  });
 });
